@@ -19,6 +19,8 @@ import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { cn } from '@/lib/utils';
 import { LyricsEditor } from '@/components/LyricsEditor';
 import { AddMp3Button } from '@/components/AddMp3Button';
+import { DemoSongs } from '@/components/DemoSongs';
+import { MusicServiceLinks } from '@/components/MusicServiceLinks';
 
 const Index = () => {
   const [audioFile, setAudioFile] = useState<{ file: File; url: string } | null>(null);
@@ -35,6 +37,7 @@ const Index = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [animationBackgroundColor, setAnimationBackgroundColor] = useState('bg-black');
   const [chemistryTileColor, setChemistryTileColor] = useState('bg-gray-700');
+  const [currentSong, setCurrentSong] = useState<{ artist: string; title: string } | null>(null);
 
   // Update current line based on playback time
   useEffect(() => {
@@ -68,6 +71,16 @@ const Index = () => {
     toast({
       title: "Lyrics loaded",
       description: `${selectedLyrics.lines.length} lines of lyrics are ready`
+    });
+  };
+
+  const handleDemoSongSelected = (selectedLyrics: Lyrics, audioFile: { file: File; url: string }) => {
+    setLyrics(selectedLyrics);
+    setAudioFile(audioFile);
+    setActiveTab('data');
+    toast({
+      title: "Demo song loaded",
+      description: `${selectedLyrics.lines.length} lines of lyrics with audio are ready`
     });
   };
 
@@ -325,8 +338,16 @@ const Index = () => {
                   <CardHeader>
                     <CardTitle>Search Lyrics</CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="space-y-4">
                     <LyricsSearch onLyricsSelected={handleLyricsSelected} onFileSelected={handleFileSelected} />
+                    
+                    <Separator />
+                    
+                    <DemoSongs onSongSelected={handleDemoSongSelected} />
+                    
+                    <Separator />
+                    
+                    <MusicServiceLinks artist={currentSong?.artist} title={currentSong?.title} />
                   </CardContent>
                 </Card>
               </TabsContent>
