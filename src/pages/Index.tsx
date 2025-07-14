@@ -292,11 +292,11 @@ const Index = () => {
             <a className="mr-6 flex items-center space-x-2" href="/">
               <img 
                 src="/logo.png" 
-                alt="Lyrical Elements Logo" 
+                alt="SongVerse Logo" 
                 className="h-8 w-8 object-contain"
                 style={{ maxHeight: '32px', maxWidth: '32px' }}
               />
-              <span className="font-bold text-lg">Lyrical Elements</span>
+              <span className="font-bold text-lg">SongVerse</span>
             </a>
           </div>
           <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">

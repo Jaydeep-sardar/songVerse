@@ -1,4 +1,4 @@
-# 🧪 ChemLyrics — Periodic Table Style Lyrics Animator
+# 🧪 SongVerse — Periodic Table Style Lyrics Animator
 
 Create lyric videos like never before. Mix **Chemistry**, **Coding**, **Emojis**, and **Physics Symbols** to make your lyrics *explode with style*.
 
@@ -128,6 +128,11 @@ Custom splitting + symbol logic
 
 🙌 Contribute
 Feel free to fork, improve symbol sets, or add your own visual themes!
+
+## 👨‍💻 Author
+Created by **Jaydeep Sardar**
+- 📱 Instagram: [@jaydeep_sardar](https://instagram.com/jaydeep_sardar)
+- 🐙 GitHub: [@Jaydeep-sardar](https://github.com/Jaydeep-sardar)
 
 📸 Logo & Favicon
 Designed using AI and vector graphics — combining 🎶 + ⚗️ + 💖
