@@ -131,8 +131,7 @@ Feel free to fork, improve symbol sets, or add your own visual themes!
 
 ## 👨‍💻 Author
 Created by **Jaydeep Sardar**
-- 📱 Instagram: [@jaydeep_sardar](https://instagram.com/jaydeep_sardar)
-- 🐙 GitHub: [@Jaydeep-sardar](https://github.com/Jaydeep-sardar)
+-  GitHub: [@Jaydeep-sardar](https://github.com/Jaydeep-sardar)
 
 📸 Logo & Favicon
 Designed using AI and vector graphics — combining 🎶 + ⚗️ + 💖
