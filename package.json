@@ -1,8 +1,9 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "songverse",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": "Jaydeep Sardar",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
