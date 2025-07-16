@@ -25,10 +25,6 @@ Word: LOVE
 OR if not found in table:
 → ❤️ (emoji fallback)
 
-yaml
-Copy
-Edit
-
 Each word becomes a stack of stylish chemistry blocks with real or symbolic meaning!
 
 ---
